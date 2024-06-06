@@ -1,7 +1,7 @@
 //Follow these steps-
 1. FIRST OPEN THIS CODE INTO VSCODE
 2. OPEN TERMINAL AND RUN COMMAND:  "npm install"
-3. CREATE .ENV FILE AND WRITE INSIDE, MONGODB_URL ="mongodb+srv://dheeraj999:999dheeraj@fantasy-cricket-team-db.r6dclm2.mongodb.net/"
+3. CREATE .ENV FILE AND WRITE INSIDE, MONGODB_URL ="mongodb+srv://dheeraj999:999dheeraj@fantasy-cricket-team-db.r6dclm2.mongodb.net/"     //i know, it is not safe but i wanted to keep it simple. 
 4. Then Run - "npm start"
 5. Open chrome browser and go on "http://localhost:5000/api-docs/"  //Used swagger for api's documentation.
 6. Now you can test all api's on browser, i used swagger for api documentation 
