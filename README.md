@@ -5,7 +5,7 @@
 4. Then Run - "npm start"
 5. Open chrome browser and go on "http://localhost:5000/api-docs/"  //Used swagger for api's documentation.
 6. Now you can test all api's on browser, i used swagger for api documentation 
-    on the other side, you can use postmen for api testing.
+7. or you can use postmen for api testing.
 ******************************************
 
 
