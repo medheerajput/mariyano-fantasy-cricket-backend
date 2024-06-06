@@ -1,0 +1,63 @@
+openapi: 3.0.0
+info:
+  title: Fantasy Cricket Backend API
+  description: API documentation for managing teams and processing match results in a fantasy cricket app.
+  version: 1.0.0
+servers:
+  - url: http://localhost:5000
+    description: Local development server
+paths:
+  /api/teams/add-team:
+    post:
+      tags:
+      - Add a new team entry
+      summary: Add a new team into the database
+      description: Endpoint to add a new team with players, captain, and vice-captain.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                teamName:
+                  type: string
+                  description: Name of the team.
+                players:
+                  type: array
+                  items:
+                    type: string
+                  description: List of players in the team.
+                captain:
+                  type: string
+                  description: Captain of the team.
+                viceCaptain:
+                  type: string
+                  description: Vice-captain of the team.
+      responses:
+        '200':
+          description: Team added successfully.
+        '400':
+          description: Error adding team.
+  /api/results/process-result:
+    post:
+      tags:
+      - Process match result
+      summary: Process match result
+      description: Endpoint to process match result and calculate points for teams.
+      responses:
+        '200':
+          description: Match result processed successfully.
+        '400':
+          description: Error processing match result.
+  /api/results/team-result:
+    get:
+      tags:
+      - Get team results
+      summary: Get team results
+      description: Endpoint to get the list of team results and winners.
+      responses:
+        '200':
+          description: Team results retrieved successfully.
+        '400':
+          description: Error retrieving team results.
