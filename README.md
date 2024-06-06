@@ -6,6 +6,26 @@
 5. Open chrome browser and go on "http://localhost:5000/api-docs/"  //Used swagger for api's documentation.
 6. Now you can test all api's on browser, i used swagger for api documentation 
 7. or you can use postmen for api testing.
+   You can test with this data
+   {
+  "teamName": "My Team",
+  "players": [
+  "RD Gaikwad",
+  "DP Conway",
+  "MM Ali",
+  "MS Dhoni",
+  "Ravindra Jadeja",
+  "Dwayne Bravo",
+  "YBK Jaiswal",
+  "JC Buttler",
+  "R Ashwin",
+  "TA Boult",
+  "YS Chahal"
+  ],
+  "captain": "MS Dhoni",
+  "viceCaptain": "JC Buttler"
+}
+
 ******************************************
 
 
